@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="utf-8">
+	<title>Pigeons</title>
+	<link rel="stylesheet" href="css/app.css">
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="script.js"></script>
+</head>
+<body ng-controller="mainController">
+	
+	<div id="head">
+			<div id="brand">
+				<h1>Mebis Eric</h1><h3 class="heading">Race & breeding pigeons</h3>
+			</div>
+			<!--<div id="language">
+				<ul>
+					<li><a href="#">NL</a></li>
+					<li><a href="#">EN</a></li>
+				</ul>
+			</div>-->
+			<div id="flyingDoves">
+			</div>
+			
+		</div>
+		<div id="nav" >
+				
+				<label for="show-menu" class="show-menu">Show Menu</label>
+				<input type="checkbox" id="show-menu" role="button">
+				
+				<ul id="menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#pigeons">Pigeons</a></li>
+					<li><a href="#photos">Photos</a></li>
+					<!--<li><a href="#">Pigeons for sale</a></li>-->
+					<li><a href="#articles">Articles</a></li>
+					<li><a href="#prestations">Results</a></li>
+					<li><a href="#testimonials">Testimonials</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<!--<li><a href="Shop.html">Request order</a></li>-->
+				</ul>
+				
+		</div>		
+		<div id="content">
+			<div ng-view></div>
+		</div>
+		<div id="foot">
+			<!--<p>Copyright Pigeons Eric 2014-2015</p>-->
+			<!--<div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+			<div>Icons made by <a href="http://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>-->
+		</div>
+</body>
+</html>

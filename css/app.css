@@ -1,0 +1,297 @@
+body{
+	font-family:Arial;
+	margin:0px;
+	background-color:#FBFBFB;
+	//background-image:url("../afbeeldingen/bg5.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 100% ;
+	color:black;
+}
+h1{
+	margin:0 !important;
+}
+h2{
+	text-align:center;
+}
+h3{
+	margin-bottom:0;
+}
+p{
+	text-align:justify;
+}
+.heading{
+	margin:0;
+	padding-top:15px;
+}
+.subTitles{
+	padding-bottom:20px;
+}
+p{
+	margin-top:10px;
+	padding-left:20px;
+	padding-right:20px;
+}
+table{
+	margin:1em;
+}
+.box{
+	overflow:hidden;
+	padding:1em;
+}
+.backgr{
+	background-image:url("../afbeeldingen/transparent.png");
+	margin:1em;
+}
+.top{
+	background-image:url("../afbeeldingen/transparent.png");
+	text-align:center;
+}
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.icon{
+	margin-top:30px;
+	text-align:center;
+}
+.icon div{
+	padding:20px;
+}
+
+/*#foot{
+	background-image:url("../afbeeldingen/transparent.png");
+	width:90%;
+	padding-left:10%;
+}*/
+
+#content{
+}
+#head{
+	background-image:url("../afbeeldingen/head.jpg");
+	background-size: 100% ;
+    background-repeat: no-repeat;
+	background-position:top center ;
+	width:100%;
+	
+	color:#F2F2F2;
+	height:170px;
+}
+#flyingDoves{
+	background-image:url("../afbeeldingen/flyingDoves.png");
+	background-size: 70% ;
+    background-repeat: no-repeat;
+	background-position:center ;
+	width:30%;
+	height:100%;
+	float:right;
+}
+/*Navigation*/
+#nav{
+	overflow:hidden;
+	background-image:url("../afbeeldingen/transparent.png");
+	width:90%;
+	padding-left:10%;
+}
+#nav ul,#language ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav ul li,#language ul li{
+	float: left;
+}
+
+#nav ul li a {
+    display: block;
+	padding:10px;
+	padding-right:15px;
+	font-size:20px;
+	text-decoration: none !important;
+	
+}
+
+#nav ul li a:hover{
+	background-color: #009EBA;
+	color:white;
+}
+.selected{
+	background-color: #009EBA;
+	color:white;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #009EBA;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+.show-menu:hover{
+	background-color:00B8D9;
+}
+a{color:white;}
+/*Languages*/
+#language{
+	background-image:url("../afbeeldingen/transparent.png");
+	overflow:hidden;
+	float:right;
+	display: inline-block
+}
+#brand{
+	padding:20px;
+	float:left;
+	width:60%;
+}
+#language ul li a{
+	padding:5px;
+	display: block;
+	text-decoration: none !important;
+	color:Black;
+}
+#language ul li a:hover{
+	color:white;
+}
+/*content*/
+#content{
+	margin-left:auto;
+	margin-right:auto;
+	width:85%;
+}
+.pedigreeButton{
+	margin-top:10px;
+	padding:5px;
+	float:right;
+	margin-left:10px;
+}
+.pigeonName{
+	float:left;
+}
+.wrapperNameButtons{
+	overflow:hidden;
+	margin-top:10px;
+}
+.pigeon{ display:none;}
+.fixed {
+	position: fixed; 
+	top: 0; 
+	z-index: 1;
+	
+	background-image:url("../afbeeldingen/transparent2.png") !important; 
+	width:100%;
+}
+.success{
+	display:none;
+	width:100%;
+	background-color:#AFFFA2;
+	padding:20px;
+}
+.error{
+	display:none;
+	padding:20px;
+	width:100%;
+	background-color:#FFA2A2;
+}
+.success span{
+	background-image: url(../afbeeldingen/icons/success.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left: 50px; 
+}
+.error span{
+	background-image: url(../afbeeldingen/icons/error.png);
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-top:20px;
+	padding-bottom:20px;
+	padding-left: 50px; 
+}
+/*submenu*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+.filter{
+	margin-left:auto;
+	margin-right:auto;
+	width:85%;
+}
+
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+	body{
+		background-image:none;
+		background-color:#FBFBFB;
+	}
+	#head{
+		background-image:none;
+		height:auto !important;
+	}
+	#nav{
+		padding:0px;
+		background-image:none;
+		width:100%;
+		background-color:#909090;
+	}
+	/*Make dropdown links appear inline*/
+	#nav ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	#nav li {
+		margin-bottom: 1px;
+		border-bottom:1px gray solid;
+	}
+	/*Make all menu links full width*/
+	#nav ul li, #nav li a {
+		width: 100%;
+	}
+	.show-menu {
+		display:block;
+	}
+	.fixed {
+		position:static;
+		background-color:#909090;
+	}
+	#brand{
+		color:black;
+	}
+	#flyingDoves{
+		display:none;
+	}
+}
