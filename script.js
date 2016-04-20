@@ -1,6 +1,6 @@
 // create the module and name it app
     var app = angular.module('app', ['ngRoute']);
-
+	var key = 'i5qmRRLvtKzATW37IFnitzVOeFLt2w3D';
 	// configure our routes
     app.config(function($routeProvider) {
         $routeProvider
@@ -50,15 +50,18 @@
 	
     // create the controller and inject Angular's $scope
     app.controller('mainController', function($scope) {
-
-        // create a message to display in our view
         $scope.message = 'Everyone come and see how good I look!';
     });
 	
-	app.controller('aboutController', function($scope) {
-        $scope.message = 'Look! I am an about page.';
-    });
-
-    app.controller('contactController', function($scope) {
-        $scope.message = 'Contact us! JK. This is just a demo.';
+	app.controller('pigeonsController', function($scope, $http) {
+		$http({
+			method: 'GET',
+			url: 'https://api.mlab.com/api/1/databases/pigeons/collections/DuivenEme?apiKey='+key
+		}).then(function (response) {
+			console.log(response.data);
+			$scope.pigeons = response.data;
+		}, function errorCallback(response) {
+			
+			console.log(response);
+		});
     });
