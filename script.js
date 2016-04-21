@@ -1,12 +1,18 @@
 // create the module and name it app
     var app = angular.module('app', ['ngRoute']);
 	var key = 'i5qmRRLvtKzATW37IFnitzVOeFLt2w3D';
+	
 	// configure our routes
     app.config(function($routeProvider) {
         $routeProvider
 
             // route for the home page
             .when('/', {
+                templateUrl : 'pages/home.html',
+                controller  : 'mainController'
+            })
+			
+			.when('/home', {
                 templateUrl : 'pages/home.html',
                 controller  : 'mainController'
             })
@@ -50,18 +56,43 @@
 	
     // create the controller and inject Angular's $scope
     app.controller('mainController', function($scope) {
-        $scope.message = 'Everyone come and see how good I look!';
+		
     });
 	
-	app.controller('pigeonsController', function($scope, $http) {
-		$http({
-			method: 'GET',
-			url: 'https://api.mlab.com/api/1/databases/pigeons/collections/DuivenEme?apiKey='+key
-		}).then(function (response) {
-			console.log(response.data);
-			$scope.pigeons = response.data;
-		}, function errorCallback(response) {
-			
-			console.log(response);
-		});
+	app.controller('pigeonsController', function($scope, $http,$rootScope) {
+		if(!$rootScope.pigeons){
+			$scope.busy=true;
+			$http({
+				method: 'GET',
+				url: 'https://api.mlab.com/api/1/databases/pigeons/collections/DuivenEme?apiKey='+key
+			}).then(function (response) {
+				$scope.busy=false;
+				console.log(response.data);
+				$scope.pigeons = response.data;
+				$rootScope.pigeons = response.data;
+			}, function errorCallback(response) {
+				$scope.busy=false;
+				console.log(response);
+			});
+		}
+    });
+	
+	app.controller('photosController', function($scope) {
+	
+    });
+	
+	app.controller('articlesController', function($scope) {
+	
+    });
+	
+	app.controller('prestationsController', function($scope) {
+	
+    });
+	
+	app.controller('testimonialsController', function($scope) {
+	
+    });
+	
+	app.controller('contactController', function($scope) {
+	
     });

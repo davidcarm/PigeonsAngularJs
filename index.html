@@ -3,45 +3,45 @@
 <head>
 	<meta charset="utf-8">
 	<title>Pigeons</title>
+	<link rel="shortcut icon" href="afbeeldingen/icons/favicon.ico" />
+	<!-- Own css -->
 	<link rel="stylesheet" href="css/app.css">
+	<!-- Grid system css -->
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+	<!-- Icons css -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<!-- Javascript -->
 	<script src="bower_components/angular/angular.js"></script>
 	<script src="bower_components/angular-route/angular-route.js"></script>
 	<script src="script.js"></script>
 </head>
 <body ng-controller="mainController">
-	
 	<div id="head">
-			<div id="brand">
-				<h1>Mebis Eric</h1><h3 class="heading">Race & breeding pigeons</h3>
-			</div>
-			<!--<div id="language">
-				<ul>
-					<li><a href="#">NL</a></li>
-					<li><a href="#">EN</a></li>
-				</ul>
-			</div>-->
-			<div id="flyingDoves">
-			</div>
-			
-		</div>
 		<div id="nav" >
-				
-				<label for="show-menu" class="show-menu">Show Menu</label>
-				<input type="checkbox" id="show-menu" role="button">
-				
-				<ul id="menu">
-					<li><a href="#">Home</a></li>
-					<li><a href="#pigeons">Pigeons</a></li>
-					<li><a href="#photos">Photos</a></li>
+			<label for="show-menu" class="show-menu">Show Menu</label>
+			<input type="checkbox" id="show-menu" role="button">	
+			<ul id="menu">
+				<li><a href="#/">Home</a></li>
+				<li><a href="#pigeons">Pigeons</a></li>
+				<li><a href="#photos">Photos</a></li>
 					<!--<li><a href="#">Pigeons for sale</a></li>-->
-					<li><a href="#articles">Articles</a></li>
-					<li><a href="#prestations">Results</a></li>
-					<li><a href="#testimonials">Testimonials</a></li>
-					<li><a href="#contact">Contact</a></li>
+				<li><a href="#articles">Articles</a></li>
+				<li><a href="#prestations">Results</a></li>
+				<li><a href="#testimonials">Testimonials</a></li>
+				<li><a href="#contact">Contact</a></li>
 					<!--<li><a href="Shop.html">Request order</a></li>-->
-				</ul>
+			</ul>		
+		</div>
+		<div id="brand">
+			<h1>Mebis Eric</h1><h3 class="heading">Race & breeding pigeons</h3>
+		</div>
+
+		<div id="flyingDoves">
+		</div>
+			
+	</div>
 				
-		</div>		
 		<div id="content">
 			<div ng-view></div>
 		</div>
