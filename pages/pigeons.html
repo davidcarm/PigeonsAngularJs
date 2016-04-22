@@ -1,4 +1,26 @@
 <div>
-	<div class="big-spinner"><i class="fa fa-spinner fa-5x fa-spin" aria-hidden="true" ng-if="busy"></i></div>
-	<div ng-repeat="pigeon in pigeons"> {{pigeon.name}}</div>
+	<div class="big-spinner" ng-if="busy"><i class="fa fa-spinner fa-5x fa-spin" aria-hidden="true"></i></div>
+	<div ng-repeat="pigeon in pigeons" ng-if="!busy" class="pure-g">
+		<div class="pure-g">
+			<div class="pure-u-1 pure-u-md-1 pure-u-lg-1-2 pigeon">
+				<div class="box backgr pure-g">
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+						<image ng-src="data/{{pigeon.image}}" class="pure-img image">
+					</div>
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+						<p>{{pigeon.text}}</p>
+					</div>
+					<div class="wrapperNameButtons">
+						<h3 class="pigeonName"> {{pigeon.name}} </h3>
+						<a target="_blank" ng-href="data/{{pigeon.pedigree}}">
+							<image src="afbeeldingen/icons/pedigree.png" title="Pedigree" class="pedigreeButton">
+						</a>
+						<a target="_blank" ng-href="data/{{pigeon.result}}">
+							<image src="afbeeldingen/icons/result.png" title="Results" class="pedigreeButton">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>

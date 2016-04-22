@@ -9,12 +9,7 @@
             // route for the home page
             .when('/', {
                 templateUrl : 'pages/home.html',
-                controller  : 'mainController'
-            })
-			
-			.when('/home', {
-                templateUrl : 'pages/home.html',
-                controller  : 'mainController'
+                controller  : 'homeController'
             })
 
             // route for the pigeons page
@@ -59,7 +54,12 @@
 		
     });
 	
-	app.controller('pigeonsController', function($scope, $http,$rootScope) {
+	app.controller('homeController', function($scope, $http, $rootScope) {
+		console.log("haaaah");
+    });
+	
+	app.controller('pigeonsController', function($scope, $http, $rootScope) {
+		
 		if(!$rootScope.pigeons){
 			$scope.busy=true;
 			$http({

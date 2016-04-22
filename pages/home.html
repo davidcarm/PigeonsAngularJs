@@ -2,7 +2,7 @@
 	<div class="pure-g default-margin">
 		<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 ">
 			<div class="box">
-						Mebis E. race & breeding pigeons is uitgegroeid tot een bestand van duiven die zeer goede prestaties neerzetten op de vitesse -en hafo vluchten. Het oude stamkoppel  "De moller 149 x Kloekse 537"  bleek niet alleen goed te presteren op de vluchten maar ze bleken ook nog eens goede verervers te zijn. Daarbij ligt dit koppel  en hun kinderen en kleinkinderen aan basis van een meerdere asduiven en zeer goed presterende duiven.   Het mag dan ook geen geheim zijn dat mijn 40 jaren duivenervaring samen met mijn doorgedreven kennis van de ogentheorie mij door de jaren heen een goede kijk op prestatie duiven gegeven heeft.  Op de website zal je dan ook  veel nuttige informatie kunnen vinden over mijn duiven bestand, begeleiding van duiven en de ogentheorie. 
+						Mebis E. race &amp; breeding pigeons is uitgegroeid tot een bestand van duiven die zeer goede prestaties neerzetten op de vitesse -en hafo vluchten. Het oude stamkoppel  "De moller 149 x Kloekse 537"  bleek niet alleen goed te presteren op de vluchten maar ze bleken ook nog eens goede verervers te zijn. Daarbij ligt dit koppel  en hun kinderen en kleinkinderen aan basis van een meerdere asduiven en zeer goed presterende duiven.   Het mag dan ook geen geheim zijn dat mijn 40 jaren duivenervaring samen met mijn doorgedreven kennis van de ogentheorie mij door de jaren heen een goede kijk op prestatie duiven gegeven heeft.  Op de website zal je dan ook  veel nuttige informatie kunnen vinden over mijn duiven bestand, begeleiding van duiven en de ogentheorie. 
 						<br/><br/>
 						Ik  wens dan ook iedereen veel  succes met de duivensport  en aarzel niet om contact op te nemen voor vragen.
 						<br/><br/>
@@ -11,7 +11,24 @@
 		</div>
 		<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 ">
 			<div class="box backgr">
-						
+				<div class="big-spinner" ng-if="busy"><i class="fa fa-spinner fa-3x fa-spin" aria-hidden="true"></i></div>
+				<div class="pure-g" ng-if="!busy">
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+						<image ng-src="data/{{image}}" class="pure-img image">
+					</div>
+					<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+						<p>{{text}}</p>
+					</div>
+					<div class="wrapperNameButtons">
+						<h3 class="pigeonName"> {{name}} </h3>
+						<a target="_blank" ng-href="data/{{pedigree}}">
+							<image src="afbeeldingen/icons/pedigree.png" title="Pedigree" class="pedigreeButton">
+						</a>
+						<a target="_blank" ng-href="data/{{result}}">
+						<image src="afbeeldingen/icons/result.png" title="Results" class="pedigreeButton">
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>		
 	</div>
@@ -41,15 +58,22 @@
 	
 	<div class="pure-g default-margin">
 		<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
-			<div class="box">
-					Over de "Moller 149", het is een bijzondere duif omdat ze &eacute;&eacute;n van de weinige duiven is die over een cluster oog of "clustereye" beschikte en dat  ook nog eens perfect op foto is vastgelegd door mezelf en Bob Berendsen te Nederland. 
-				
-					Aanhangers zoals Dan Thompson, Myron Kulik, Bob Fleming zijn ervan overtuigd dat deze duiven over uitzonderlijke vlieg -en kweekkwaliteiten beschikken en nooit zullen telleur stellen.
+			<div class="pure-g">
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+					<div class="box">
+						Over de "Moller 149", het is een bijzondere duif omdat ze &eacute;&eacute;n van de weinige duiven is die over een cluster oog of "clustereye" beschikte en dat  ook nog eens perfect op foto is vastgelegd door mezelf en Bob Berendsen te Nederland. 
+					
+						Aanhangers zoals Dan Thompson, Myron Kulik, Bob Fleming zijn ervan overtuigd dat deze duiven over uitzonderlijke vlieg -en kweekkwaliteiten beschikken en nooit zullen telleur stellen.
+					</div>
+				</div>
+				<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
+					<img src="afbeeldingen/B98-5161149-Eric-Mebis-cluster.jpg" class="pure-img"/>
+				</div>
 			</div>
 		</div>
 		<div class="pure-u-1 pure-u-md-1-2 pure-u-lg-1-2">
 			<div class="box">
-				<img src="afbeeldingen/B98-5161149-Eric-Mebis-cluster.jpg" class="pure-img"/>
+				
 			</div>
 		</div>
 	</div>
